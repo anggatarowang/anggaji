@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Foto</title>
+    <style>
+        /* Mengatur background halaman menjadi hitam */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000; /* Background hitam */
+            color: #fff; /* Warna teks putih untuk kontras */
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 36px;
+            color: #f39c12; /* Warna judul oranye agar terlihat terang */
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Grid responsif */
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Shadow putih yang halus */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05); /* Zoom sedikit saat hover */
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4); /* Efek hover lebih terang */
+        }
+    </style>
+</head>
+<body>
+    <nav> <a href="D:\angga 11 tkj 4/tugassemester.html">Halaman utama</a></nav>
+    
+    <h1>Galeri Foto</h1>
+    <div class="gallery">
+        <img src="D:\55.jpeg" width="22" alt="Foto 1">
+        <img src="D:\56.jpeg" width="22" alt="Foto 2">
+        <img src="D:\57.jpeg" width="22" alt="Foto 3">
+        <img src="D:\58.jpeg" width="22" alt="Foto 4">
+        <img src="D:\59.jpeg" width="22" alt="Foto 5">
+        <img src="D:\60.jpeg" width="22" alt="Foto 6">
+    </div>
+</body>
+</html>
